@@ -1,9 +1,17 @@
 
 # Masked Image Modeling as a Framework for Self-Supervised Learning across Eye Movement
 
-This repository is the official implementation of Masked Image Modeling as a Framework for Self-Supervised Learning across Eye Movement (https://arxiv.org/abs/...). 
-
 We investigate Masked Image Modeling in convolutional networks from a biological perspective. As shown in panel (b) of the figure below, the focused nature of primate perception offers a natural masking paradigm in which peripheral and inattended parts are less accessible. Predicting this masked content and revealing it via eye movements then creates a self-supervised task that, as we show, leads to learning of object representations.
+
+
+This repository is the official implementation of our paper 
+
+Robin Weiler*, Matthias Brucklacher*, Cyriel M. A. Pennartz, Sander M. Bohté - [Masked Image Modeling as a Framework for Self-Supervised Learning across Eye Movement](https://arxiv.org/abs/2404.08526) 
+
+
+
+&ast;equal contribution
+
 
 
 
@@ -17,7 +25,7 @@ We investigate Masked Image Modeling in convolutional networks from a biological
 
 Create an environment with Python 3.9 and activate.
 
-To install requirements:
+To install the requirements:
 
 ```setup
 pip install -r requirements.txt
@@ -64,3 +72,15 @@ Across the various masking conditions, the models achieve the following performa
 </p>
 
 
+
+## Cite
+
+When referring to our work or using our code, kindly cite
+```
+@article{weiler2024masked,
+  title={Masked Image Modeling as a Framework for Self-Supervised Learning across Eye Movements},
+  author={Weiler, Robin and Brucklacher, Matthias and Pennartz, Cyriel and Boht{\'e}, Sander M},
+  journal={arXiv preprint arXiv:2404.08526},
+  year={2024}
+}
+```
