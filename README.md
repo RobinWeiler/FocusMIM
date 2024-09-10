@@ -25,10 +25,18 @@ Robin Weiler*, Matthias Brucklacher*, Cyriel M. A. Pennartz, Sander M. Bohté - 
 
 Create an environment with Python 3.9 and activate.
 
-To install the requirements:
+If you are using a CUDA-capable GPU, delete the last two lines from the file requirements.txt.
+
+To install the requirements run:
 
 ```setup
 pip install -r requirements.txt
+```
+
+If you are using a CUDA-capable GPU, install pytorch and torchvision now manually, e.g.
+
+```setup
+conda install pytorch==1.13.1 torchvision==0.14.1 pytorch-cuda=11.7 -c pytorch -c nvidia
 ```
 
 
