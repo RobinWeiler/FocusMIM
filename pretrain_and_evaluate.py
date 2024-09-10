@@ -30,8 +30,8 @@ print('Running on {}'.format(device))
 
 
 @click.command()
-@click.option('in', '--input-path')
-@click.option('out', '--output-path')
+@click.option('--input-path')
+@click.option('--output-path')
 @click.option('-mm', '--masking-mode')
 @click.option('-mr', '--masking-ratio')
 @click.option('-b', '--blur')
