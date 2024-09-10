@@ -48,7 +48,13 @@ To train and evaluate the model(s) in the paper on the STL10 dataset, run this c
 python pretrain_and_evaluate.py --input-path <path_to_data> --output-path <path_to_results>  --masking-mode <"random_patches"/"foveate"/"periphery"/"None"> --masking-ratio <0-1> --blur <"True"/"False"> --random-crop <"True"/"False"> --learning-rate <0.0001-0.0005> --epochs <500> --seed <0/1/2/3/4>
 ```
 
-We found a learning rate of 1e-3 to work best for the masked-periphery models, while 5e-3 was best for all other models. Furthermore, we found a masking ratio of 0.8 and 0.6 to work best for masked-periphery models and masked-random-patches models, respectively.
+We found a learning rate of 1e-4 to work best for the masked-periphery models, while 5e-4 was best for all other models. Furthermore, we found a masking ratio of 0.8 and 0.6 to work best for masked-periphery models and masked-random-patches models, respectively.
+
+A quick start would thus be:
+```
+python pretrain_and_evaluate.py --input-path <path_to_data> --output-path <path_to_results>  --masking-mode "random_patches" --masking-ratio 0.6 --blur "False" --random-crop "True" --learning-rate 0.0005 --epochs 500 --seed 0
+```
+
 
 ## Presegmentation
 
